@@ -1,0 +1,4 @@
+This fold should hold the licence text for the project.
+
+I guess this perticular example can be CC0.
+
