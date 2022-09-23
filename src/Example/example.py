@@ -4,9 +4,9 @@ def add_one(n):
 
 def is_even(n):
     if n % 2 == 0:
-        return true
+        return True
     else:
-        return false
+        return False
 
 
 if __name__ == "__main__":
