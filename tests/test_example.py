@@ -12,4 +12,5 @@ def test_is_even():
 
 
 def test_failing():
-    assert 3 == 3
+    # This test should fail.
+    assert 3 == 77
