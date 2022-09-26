@@ -23,4 +23,4 @@ def test_truthyness():
 
 def test_failing():
     # Assert that evaluates to false counts as a test failure
-    assert 3 == 3
+    assert 3 == 4
