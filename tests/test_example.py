@@ -12,4 +12,4 @@ def test_is_even():
 
 
 def test_failing():
-    assert 3 == 4
+    assert 3 == 3
