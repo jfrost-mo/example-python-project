@@ -18,3 +18,27 @@ addopts = [
 pythonpath = [
   "src"
     ]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py37, py38, py39, py310
+isolated_build = True
+
+[testenv]
+# install testing framework
+# ... or install anything else you might need for testing here
+deps = pytest
+
+# run the tests
+# ... or run any other command line tool you need to run here
+commands = pytest
+
+[gh-actions]
+python =
+    3.7: py37
+    3.8: py38
+    3.9: py39
+    3.10: py310
+"""
+
