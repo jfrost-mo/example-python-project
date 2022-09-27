@@ -8,6 +8,7 @@ def test_is_even():
     # Assert condition must end up True
     assert not exmpl.is_even(5)
 
+
 def test_add_one():
     assert exmpl.add_one(7) == 8
     # Can test function multiple times with different values
@@ -16,7 +17,7 @@ def test_add_one():
 
 def test_truthyness():
     # Test functions don't need to be inside classes
-    truthy_var = "False"
+    truthy_var = 1
     assert truthy_var == True
 
 
