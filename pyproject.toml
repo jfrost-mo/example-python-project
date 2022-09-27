@@ -38,8 +38,7 @@ commands = pytest
 description = invoke sphinx-build to build the HTML docs
 basepython = python3
 deps = sphinx
-commands = sphinx-build -d "{toxworkdir}/docs_doctree" docs/source "docs/build" --color -W -bhtml {posargs}
-           python -c 'import pathlib; print("documentation available under file://\\{0\\}".format(pathlib.Path(r"{toxworkdir}") / "docs_out" / "index.html"))'
+commands = sphinx-build -d "docs/build/doctree" docs/source "docs/build/html" --color -W -bhtml {posargs}
 
 [gh-actions]
 python =
