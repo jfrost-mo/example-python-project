@@ -9,6 +9,8 @@ Welcome to Example's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   ipsum
 
 This is where I should write some documentation.
 
