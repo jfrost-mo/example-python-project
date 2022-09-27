@@ -1,6 +1,5 @@
 ======================
-PyTest Example Project
+Python Example Project
 ======================
 
-An example project to demonstrate PyTest.
-
+An example project to demonstrate how a modern project should be set up.
