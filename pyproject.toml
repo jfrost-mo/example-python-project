@@ -34,6 +34,13 @@ deps = pytest
 # ... or run any other command line tool you need to run here
 commands = pytest
 
+[testenv:docs]
+description = invoke sphinx-build to build the HTML docs
+basepython = python3.7
+deps = sphinx
+commands = sphinx-build -d "{toxworkdir}/docs_doctree" docs "{toxworkdir}/docs_out" --color -W -bhtml {posargs}
+           python -c 'import pathlib; print("documentation available under file://\{0\}".format(pathlib.Path(r"{toxworkdir}") / "docs_out" / "index.html"))'
+
 [gh-actions]
 python =
     3.7: py37
