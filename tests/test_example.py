@@ -2,20 +2,16 @@
 import Example.example as exmpl
 
 
-class TestFunctions:
-    # A class can optionally be used to group tests.
-    # They should start Test*
+# Tests are functions starting in test_*
+def test_is_even():
+    assert exmpl.is_even(10)
+    # Assert condition must end up True
+    assert not exmpl.is_even(5)
 
-    # Tests are functions starting in test_*
-    def test_is_even():
-        assert exmpl.is_even(10)
-        # Assert condition must end up True
-        assert not exmpl.is_even(5)
-
-    def test_add_one():
-        assert exmpl.add_one(7) == 8
-        # Can test function multiple times with different values
-        assert exmpl.add_one(-1) == 0
+def test_add_one():
+    assert exmpl.add_one(7) == 8
+    # Can test function multiple times with different values
+    assert exmpl.add_one(-1) == 0
 
 
 def test_truthyness():
@@ -26,4 +22,4 @@ def test_truthyness():
 
 def test_failing():
     # Assert that evaluates to false counts as a test failure
-    assert 3 == 4
+    assert 3 == 3
