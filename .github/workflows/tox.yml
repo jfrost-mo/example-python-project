@@ -1,11 +1,11 @@
 name: Test Python Package
 
 on:
-  - push:
+  push:
     branches:
       - main
-  - pull_request
-  - workflow_dispatch
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
