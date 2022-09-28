@@ -10,9 +10,12 @@ Welcome to Example's documentation!
    :maxdepth: 2
    :caption: Contents:
    
+   Example
    ipsum
 
 This is where I should write some documentation.
+
+The example page is where the actual module documentation is.
 
 
 Indices and tables

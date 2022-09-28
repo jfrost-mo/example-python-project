@@ -20,10 +20,11 @@ def add_one(n):
     Notes
     -----
     This is a simple function to demonstrate how they should be generally
-    written. It impliments addition[1]_
+    written. It impliments addition [1]_
 
     The operation of this function is described by the following equation:
-    .. math:: n_{final} = n_{inital} + 1
+    
+    .. math:: n_{final} = n_{inital} + \\int^{1}_{0} \\frac{x}{1} dx
 
     References
     ----------
