@@ -71,6 +71,8 @@ def is_even(n):
         return False
 
 
+seven = 7
+
 if __name__ == "__main__":
     # Given this is a libary this bit shouldn't really exist.
     print("This is an example program.")
