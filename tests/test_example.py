@@ -4,8 +4,7 @@ import Example.example as exmpl
 
 # Tests are functions starting in test_*
 def test_simple():
-    seven = 7
-    assert seven == 7
+    assert exmpl.seven == 7
 
 
 def test_is_even():
