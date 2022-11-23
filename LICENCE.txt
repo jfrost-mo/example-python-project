@@ -1,3 +1,3 @@
 This file should hold the licence text for the project.
 
-I guess this particular example can be CC0.
+This example is licence under CC0.
