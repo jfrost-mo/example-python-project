@@ -13,13 +13,11 @@ jobs:
       with:
         python-version: "3.x"
 
-    - name: Current conda version
-      run: conda info
-
     - name: Update conda
       run: |
+        conda --version
         time conda update -q conda
-        conda info
+        conda --version
 
     - name: Time environment creation (classic)
       run: |
