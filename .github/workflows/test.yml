@@ -30,7 +30,7 @@ jobs:
         conda config --set solver libmamba
 
     - name: 'Workaround for mamba-org/mamba#488'
-        run: rm /usr/share/miniconda/pkgs/cache/*.json
+      run: rm /usr/share/miniconda/pkgs/cache/*.json
 
     - name: Time environment creation (libmamba)
       run: |
