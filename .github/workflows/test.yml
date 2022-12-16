@@ -18,21 +18,21 @@ jobs:
       
     - name: Update conda
       run: |
-        time conda update conda
+        time conda update -q conda
         conda info
         
     - name: Time environment creation (classic)
       run: |
-        time conda env create --file environment.yml
+        time conda env create -q --file environment.yml
         conda env remove --name test-env
         
     - name: Time solver installation
       run: |
-        time conda install conda-libmamba-solver
+        time conda install -q conda-libmamba-solver
         conda config --set solver libmamba
 
     - name: Time environment creation (libmamba)
       run: |
-        time conda env create --file environment.yml
+        time conda env create -q --file environment.yml
         conda env remove --name test-env
 
