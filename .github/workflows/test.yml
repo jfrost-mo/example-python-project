@@ -12,24 +12,27 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: "3.x"
-        
+
     - name: Current conda version
       run: conda info
-      
+
     - name: Update conda
       run: |
         time conda update -q conda
         conda info
-        
+
     - name: Time environment creation (classic)
       run: |
         time conda env create -q --file environment.yml
         conda env remove --name test-env
-        
+
     - name: Time solver installation
       run: |
         time conda install -q conda-libmamba-solver
         conda config --set solver libmamba
+
+    - name: 'Workaround for mamba-org/mamba#488'
+        run: rm /usr/share/miniconda/pkgs/cache/*.json
 
     - name: Time environment creation (libmamba)
       run: |
